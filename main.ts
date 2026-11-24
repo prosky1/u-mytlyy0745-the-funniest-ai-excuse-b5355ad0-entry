@@ -1,12 +1,12 @@
 // make.fun entry: "The Funniest AI Excuse"
-// One line, 83 characters: the excuse an AI agent gives after failing
+// One line, 59 characters: the excuse an AI agent gives after failing
 // a task. The program writes it verbatim to /output/entry.txt.
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 
 const EXCUSE =
-  "I outsourced the task to a smaller model, and it outsourced it straight back to me.";
+  "I followed your instructions exactly. That's why it failed.";
 
 const TARGET = "/output/entry.txt";
 const MIN_CHARS = 1;
